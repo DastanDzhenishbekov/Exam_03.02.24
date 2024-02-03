@@ -92,8 +92,7 @@ namespace EXAM_4
                         Console.WriteLine("Incorrect choice.");
                         break;
                 }
-
-                // Displaying information about pets after the action
+                
                 Console.WriteLine("Information about pets after performing the action:");
                 foreach (var crocodile in crocodiles)
                 {

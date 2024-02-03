@@ -20,8 +20,7 @@ namespace EXAM_4
             crocodile.HungerLevel -= 5;
             crocodile.MoodLevel -= 5;
             crocodile.HealthLevel -= 5;
-
-            // Ensure the levels don't go below zero
+            
             crocodile.HungerLevel = Math.Max(0, crocodile.HungerLevel);
             crocodile.MoodLevel = Math.Max(0, crocodile.MoodLevel);
             crocodile.HealthLevel = Math.Max(0, crocodile.HealthLevel);
@@ -29,8 +28,7 @@ namespace EXAM_4
 
         public void ApplyAction(Crocodile crocodile, ActionType actionType)
         {
-            // Implement the logic for applying action specific to this age group
-            // You can leave it empty or add relevant logic based on your requirements
+            
         }
     }
 }

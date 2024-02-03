@@ -21,8 +21,7 @@ namespace EXAM_4
             crocodile.HungerLevel -= 2;
             crocodile.MoodLevel -= 2;
             crocodile.HealthLevel -= 2;
-
-            // Ensure the levels don't go below zero
+            
             crocodile.HungerLevel = Math.Max(0, crocodile.HungerLevel);
             crocodile.MoodLevel = Math.Max(0, crocodile.MoodLevel);
             crocodile.HealthLevel = Math.Max(0, crocodile.HealthLevel);
@@ -49,14 +48,12 @@ namespace EXAM_4
                     crocodile.MoodLevel += 5;
                     crocodile.HealthLevel += 15;
                     break;
-
-                // Add more cases as needed
+                
 
                 default:
                     break;
             }
-
-            // Ensure the levels don't go below zero
+            
             crocodile.HungerLevel = Math.Max(0, crocodile.HungerLevel);
             crocodile.MoodLevel = Math.Max(0, crocodile.MoodLevel);
             crocodile.HealthLevel = Math.Max(0, crocodile.HealthLevel);

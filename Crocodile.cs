@@ -85,12 +85,10 @@ namespace EXAM_4
 
         public void ApplyAction(ActionType actionType)
         {
-            // Перед применением стратегии, обновим уровни сытости, настроения и здоровья
             SaturationLevel = Math.Min(SaturationLevel, MaxSaturation);
             MoodLevel = Math.Min(MoodLevel, MaxMood);
             HealthLevel = Math.Min(HealthLevel, MaxHealth);
-
-            // Применение стратегии
+            
             _strategy.ApplyAction(this, actionType);
 
             Random random = new Random();

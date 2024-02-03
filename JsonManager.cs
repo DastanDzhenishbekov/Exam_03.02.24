@@ -7,24 +7,19 @@ namespace EXAM_4;
 public static class JsonManager
 {
     private const string DefaultFilePath = "crocodiles.json";
-
-    // Optional: Method to set a custom file path
+    
     public static void SetFilePath(string filePath)
     {
         FilePath = filePath;
     }
-
-    // Optional: Method to get the current file path
+    
     public static string GetFilePath()
     {
         return FilePath;
     }
 
     private static string FilePath = DefaultFilePath;
-
-    // ...
-
-    // Updated LoadCrocodiles method with exception handling
+    
     public static List<Crocodile> LoadCrocodiles()
     {
         try
@@ -42,8 +37,7 @@ public static class JsonManager
 
         return new List<Crocodile>();
     }
-
-    // Updated SaveCrocodiles method with exception handling
+    
     public static void SaveCrocodiles(List<Crocodile> crocodiles)
     {
         try
